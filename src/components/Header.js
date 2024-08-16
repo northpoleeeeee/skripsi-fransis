@@ -28,7 +28,7 @@ const stopTextToSpeech = () => {
   }
 };
 
-export default function Header() {
+export default function  Header() {
   const { data: session } = useSession();
   const isUser = session?.user;
   const isAdmin = isUser?.role === 'admin';
