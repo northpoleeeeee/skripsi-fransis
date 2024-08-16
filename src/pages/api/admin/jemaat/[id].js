@@ -1,5 +1,5 @@
 // pages/api/jemaat/[id].js
-import { connectToDatabase } from '../../../lib/db';
+import { connectToDatabase } from '../../../../lib/db';
 
 export default async function handler(req, res) {
   const { id } = req.query;
