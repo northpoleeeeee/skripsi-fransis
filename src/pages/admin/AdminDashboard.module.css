@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContent {
+  flex: 1; /* Mengisi ruang yang tersisa setelah sidebar */
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+  align-items: center; /* Menempatkan konten di tengah secara vertikal */
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.centeredText {
+  font-size: 2rem; /* Ukuran teks lebih besar */
+  font-weight: bold; /* Menebalkan teks jika diperlukan */
+  display: flex;
+  align-items: center; /* Menyelaraskan ikon dengan teks */
+  gap: 8px; /* Jarak antara gambar dan teks */
+  color: #f04747;
+}
+
+.waveImage {
+  width: 300px; /* Lebar gambar */
+  height: auto; /* Tinggi gambar menyesuaikan dengan lebar */
+  animation: wave 1.5s infinite; /* Menambahkan animasi */
+  }

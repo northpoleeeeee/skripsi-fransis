@@ -1,0 +1,152 @@
+/* Container utama yang mengatur tata letak halaman */
+.pageContainer {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Menghindari konten melampaui tinggi viewport */
+}
+
+/* Sidebar navigasi */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Konten utama */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px; /* Sesuaikan dengan lebar sidebar jika diperlukan */
+}
+
+/* Kontainer untuk elemen dengan lebar maksimum */
+.formContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Heading untuk judul atau header */
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Kelompok elemen formulir */
+.formGroup {
+  margin-bottom: 20px;
+}
+
+/* Label untuk elemen formulir */
+.formGroup label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Input, select, dan textarea styling */
+.inputText,
+.inputNumber,
+.inputDate,
+.selectInput,
+.textareaInput {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling khusus untuk textarea */
+.textareaInput {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Styling tombol */
+.button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  outline: none; /* Menghilangkan outline default */
+}
+
+/* Efek hover pada tombol */
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling untuk pesan error */
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* Styling untuk formulir */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Jarak antara elemen formulir terakhir dan tombol simpan */
+.formGroup:last-child {
+  margin-bottom: 40px; /* Jarak yang lebih besar di bawah elemen formulir terakhir */
+}
+
+/* Styling untuk tabel keuangan */
+.financeTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.financeTable th, .financeTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.financeTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Styling untuk tabel keuangan dengan elemen yang lebih besar */
+.financeTable td.amount {
+  text-align: right; /* Menyelaraskan angka ke kanan */
+  font-weight: bold;
+}
+
+.financeTable .totalRow {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+  .pageContainer {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}

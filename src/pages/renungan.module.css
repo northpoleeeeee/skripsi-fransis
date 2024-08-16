@@ -1,0 +1,78 @@
+/* renungan.module.css */
+
+/* Container utama untuk padding */
+.container {
+  padding: 20px;
+}
+
+/* Item renungan dengan border, padding, dan background */
+.renunganItem {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Header item dengan flexbox untuk penataan dan kursor pointer */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Judul dengan ukuran font dan tebal */
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Ikon panah dengan transisi transformasi */
+.arrow {
+  font-size: 1.5em;
+  transition: transform 0.3s;
+}
+
+/* Padding untuk konten body */
+.body {
+  padding: 10px;
+}
+
+/* Kontainer untuk tombol dengan gap antara tombol */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Tombol berbicara dan berhenti dengan styling dasar */
+.speakButton, .stopButton {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+/* Tombol berbicara dengan warna dan efek hover */
+.speakButton {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.speakButton:hover, .speakButton:focus {
+  background-color: #0056b3;
+}
+
+/* Tombol berhenti dengan warna dan efek hover */
+.stopButton {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.stopButton:hover, .stopButton:focus {
+  background-color: #c82333;
+}

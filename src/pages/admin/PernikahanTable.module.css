@@ -1,0 +1,28 @@
+/* PernikahanTable.module.css */
+
+.container {
+    margin-left: 250px; /* Adjust based on the width of the sidebar */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+  }
+  
+  .tableContainer {
+    margin: 10px 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  
+  .table {
+    font-size: 0.8rem; /* Reduce font size for better fit */
+  }
+  
+  /* Optional: Responsive design adjustments */
+  @media (max-width: 768px) {
+    .container {
+      margin-left: 0; /* Remove margin on smaller screens */
+    }
+  
+    .table {
+      font-size: 0.7rem; /* Further reduce font size */
+    }
+  }
+  

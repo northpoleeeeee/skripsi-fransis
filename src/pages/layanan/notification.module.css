@@ -1,0 +1,31 @@
+/* notification.css */
+
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .notification button {
+    cursor: pointer;
+  }
+  
+  .notification button:hover {
+    background-color: #003366; /* Warna latar belakang saat hover */
+  }
+  
+  .notification p {
+    margin: 0;
+  }
+  
+  .notification button {
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+  }
+  
+  

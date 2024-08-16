@@ -1,0 +1,75 @@
+/* Kontainer utama */
+.container {
+  display: flex;
+  min-height: 100vh; /* Pastikan kontainer mengisi tinggi viewport */
+}
+
+/* Kontainer form */
+.formContainer {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px; /* Sesuaikan dengan lebar sidebar */
+}
+
+/* Form */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Tata letak dua kolom */
+  gap: 20px; /* Jarak antara kolom dan baris */
+  background-color: #f9f9f9; /* Latar belakang terang untuk form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(139, 30, 30, 0.1); /* Tambahkan bayangan untuk efek kedalaman */
+}
+
+/* Grup form */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Jarak antara label dan input */
+}
+
+/* Label dalam grup form */
+.formGroup label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Jarak bawah label */
+}
+
+/* Input dan textarea */
+.formGroup input[type="text"], 
+.formGroup textarea, 
+.formGroup input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Pastikan padding termasuk dalam lebar dan tinggi */
+}
+
+/* Textarea khusus */
+.formGroup textarea {
+  resize: vertical; /* Izinkan hanya perubahan ukuran vertikal */
+  min-height: 100px; /* Tinggi minimum untuk textarea */
+}
+
+/* Tombol submit */
+.submitButton {
+  grid-column: span 2; /* Lebarkan tombol di dua kolom */
+  padding: 10px 20px;
+  background-color: #f04747; /* Warna latar belakang biru untuk tombol */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+
+/* Pesan error */
+.error {
+  color: red;
+  grid-column: span 2; /* Lebarkan pesan error di dua kolom */
+  text-align: center;
+}
+

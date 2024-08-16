@@ -1,0 +1,82 @@
+/* styles/sidebar.css */
+
+.sidebar {
+    width: 250px; /* Atur lebar sidebar sesuai kebutuhan */
+    background-color: #f4f4f4; /* Warna latar belakang sidebar */
+    position: fixed; /* Menjaga posisi sidebar tetap */
+    height: 100vh; /* Mengisi seluruh tinggi viewport */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Jarak dalam sidebar */
+    overflow-y: auto; /* Tambahkan scrollbar vertikal jika diperlukan */
+    box-shadow: 2px 0 4px rgba(199, 92, 92, 0.1); /* Tambahkan bayangan */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1px; /* Jarak antara logo dan pemisah dikurangi */
+}
+
+.logo {
+    width: 100px; /* Ukuran logo lebih besar */
+    height: auto; /* Menjaga proporsi logo */
+}
+
+.sidebar-title {
+    margin-top: 20px; /* Jarak antara logo dan teks */
+    font-size: 25px; /* Ukuran font untuk teks */
+    font-weight: bold; /* Gaya font untuk teks */
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid #f04747; /* Garis pemisah */
+    margin: 5px 0; /* Jarak atas dan bawah dikurangi */
+}
+
+.menu-item {
+    display: block; /* Mengatur agar tombol menjadi block untuk tampilan vertikal */
+    width: 100%; /* Mengisi lebar sidebar */
+    padding: 15px; /* Jarak dalam tombol */
+    border: none; /* Hapus border default tombol */
+    background: none; /* Hapus latar belakang tombol */
+    text-align: left; /* Teks rata kiri */
+    cursor: pointer; /* Tampilkan kursor pointer saat hover */
+    border-bottom: 1px solid #f04747; /* Garis bawah setiap item */
+    color: #333; /* Warna teks */
+    display: flex; /* Flex container untuk ikon dan teks */
+    align-items: center; /* Vertikal center untuk ikon dan teks */
+    text-decoration: none; /* Hapus garis bawah default link */
+    margin-top: 5px; /* Jarak atas untuk menu item */
+    transition: background-color 0.3s; /* Transisi halus saat hover */
+}
+
+.menu-item:hover {
+    background-color: #f04747; /* Warna latar belakang saat hover */
+}
+
+.menu-item-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-item-icon {
+    font-size: 20px; /* Ukuran ikon */
+    margin-right: 10px; /* Jarak antara ikon dan label */
+}
+
+.menu-item-label {
+    flex: 1; /* Membiarkan label menempati sisa ruang */
+}
+
+button {
+    border: none; /* Hapus border default tombol */
+    background: none; /* Hapus latar belakang tombol */
+    padding: 0; /* Hapus padding default tombol */
+}
+

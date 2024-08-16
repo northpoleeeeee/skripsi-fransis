@@ -1,0 +1,45 @@
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .rekeningContainer {
+    margin-bottom: 20px;
+  }
+  
+  .qrisButton {
+    padding: 8px 16px;
+    background-color: #f04747;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .qrisButton:hover {
+    background-color: #45a049;
+  }
+  
+  .qrisImage {
+    margin-top: 20px;
+  }
+  
+  .keuanganTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .keuanganTable th, .keuanganTable td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .keuanganTable th {
+    background-color: #f04747;
+    color: white;
+  }
+  

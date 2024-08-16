@@ -1,0 +1,64 @@
+/* Kontainer utama */
+.container {
+    display: flex; /* Menggunakan Flexbox untuk tata letak */
+    min-height: 100vh; /* Memastikan kontainer mengambil setidaknya tinggi layar penuh */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px; /* Lebar sidebar */
+    background-color: #f8f9fa; /* Warna latar belakang sidebar */
+    padding: 20px; /* Spasi dalam sidebar */
+    height: 100vh; /* Menjaga sidebar dengan tinggi penuh */
+    position: fixed; /* Memastikan sidebar tetap di posisi tetap */
+    top: 0; /* Menempatkan sidebar di atas */
+    left: 0; /* Menempatkan sidebar di kiri */
+    z-index: 1000; /* Memastikan sidebar berada di atas elemen lainnya */
+    overflow-x: hidden; /* Menyembunyikan overflow horizontal */
+    overflow-y: auto; /* Menambahkan scroll vertikal jika konten melebihi tinggi */
+}
+
+/* Konten utama */
+.mainContent {
+    margin-left: 250px; /* Menyisakan ruang untuk sidebar di sebelah kiri */
+    flex: 1; /* Membuat konten utama mengambil sisa ruang yang tersedia */
+    padding: 20px; /* Spasi dalam konten utama */
+    overflow-x: auto; /* Menambahkan scroll horizontal jika konten terlalu lebar */
+    background-color: #ffffff; /* Warna latar belakang konten utama */
+    z-index: 999; /* Pastikan ini lebih tinggi dari z-index sidebar */
+    position: relative; /* Pastikan positioning diatur dengan benar */
+}
+
+/* Tabel otomatis */
+.tableAuto {
+    width: 100%; /* Membuat tabel mengambil lebar penuh dari konten utama */
+    border-collapse: collapse; /* Menghilangkan jarak antar border tabel */
+    font-size: 0.875rem; /* Mengatur ukuran font lebih kecil (14px) */
+}
+
+.tableAuto th, .tableAuto td {
+    border: 1px solid #ddd; /* Garis batas tabel */
+    padding: 8px; /* Padding yang lebih besar untuk kenyamanan baca */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    vertical-align: middle; /* Memastikan teks di sel berada di tengah secara vertikal */
+}
+
+.tableAuto th {
+    background-color: #f4f4f4; /* Warna latar belakang header tabel */
+    font-weight: bold; /* Menebalkan teks header tabel */
+}
+
+/* Atur tampilan responsif */
+@media screen and (max-width: 768px) {
+    .mainContent {
+        margin-left: 0; /* Reset margin untuk layar kecil */
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative; /* Mengubah posisi sidebar menjadi relative */
+        height: auto; /* Menyesuaikan tinggi sidebar untuk layar kecil */
+        overflow-y: hidden; /* Menyembunyikan scroll vertikal di layar kecil */
+    }
+}
+

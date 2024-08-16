@@ -1,0 +1,128 @@
+/* Gaya umum untuk header */
+.header {
+    background-color: #ffffff; /* Warna latar belakang putih */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus di bawah header */
+}
+
+/* Gaya untuk navbar */
+.navbar {
+    padding: 0.5rem 1rem; /* Padding navbar */
+}
+
+/* Gaya untuk brand di navbar */
+.navbarBrand {
+    font-weight: bold;
+    color: #000000; /* Warna teks brand hitam */
+    font-size: 1.25rem; /* Ukuran font untuk brand */
+    text-decoration: none; /* Menghapus garis bawah dari teks brand */
+}
+
+/* Gaya untuk item navbar */
+.navLink {
+    color: #000000; /* Warna teks link hitam */
+    padding: 0.5rem 1rem; /* Padding pada item link */
+    text-decoration: none; /* Menghapus garis bawah dari teks link */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Transisi efek hover */
+    position: relative; /* Pastikan item link memiliki positioning */
+    font-size: 0.875rem; /* Ukuran font yang lebih kecil */
+}
+
+/* Gaya untuk item navbar saat hover */
+.navLink:hover {
+    color: #ffffff; /* Warna teks saat hover */
+    background-color: #f04747; /* Latar belakang saat hover */
+    transform: translateY(-5px); /* Mengambang ke atas saat hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus saat hover */
+    border-radius: 4px; /* Sudut membulat pada item link saat hover */
+}
+
+/* Gaya untuk dropdown menu */
+.navDropdownMenu {
+    background-color: #fc4e4e; /* Latar belakang menu dropdown */
+    border: 3px solid #dee2e6; /* Garis batas menu dropdown */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi efek hover */
+}
+
+/* Gaya untuk item dropdown */
+.navDropdownItem {
+    color: #f04747; /* Warna teks item dropdown */
+    padding: 0.5rem 1rem; /* Padding pada item dropdown */
+    text-decoration: none; /* Menghapus garis bawah dari teks item dropdown */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi efek hover */
+}
+
+/* Gaya untuk dropdown menu saat hover */
+.navDropdownMenu:hover {
+    transform: translateY(-5px); /* Mengambang ke atas saat hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus saat hover */
+}
+
+/* Gaya untuk item dropdown saat hover */
+.navDropdownItem:hover {
+    background-color: #f04747; /* Latar belakang saat hover */
+    color: #ffffff; /* Warna teks saat hover */
+}
+
+/* Gaya untuk form pencarian */
+.formControl {
+    border-radius: 4px; /* Radius sudut form pencarian */
+    border: 1px solid #f04747; /* Warna border form pencarian */
+    transition: border-color 0.3s ease; /* Transisi warna border saat fokus */
+    position: relative; /* Pastikan formControl memiliki positioning untuk pseudo-elemen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus pada form pencarian */
+    font-size: 0.875rem; /* Ukuran font untuk kontrol pencarian */
+}
+
+/* Gaya saat form pencarian dalam fokus */
+.formControl:focus {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* Bayangan lebih kuat saat fokus */
+    border-color: #f04747; /* Warna border saat fokus */
+}
+
+/* Gaya untuk tombol pencarian */
+.btnOutlinePrimary {
+    border-radius: 5px; /* Radius sudut tombol */
+    border-color: #f04747; /* Warna border tombol */
+    color: #f04747; /* Warna teks tombol */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi latar belakang dan warna teks tombol saat hover */
+    position: relative; /* Pastikan tombol memiliki positioning untuk pseudo-elemen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus pada tombol */
+}
+
+/* Gaya saat tombol pencarian dalam hover */
+.btnOutlinePrimary:hover {
+    background-color: #f04747; /* Latar belakang tombol saat hover */
+    color: #ffffff; /* Warna teks tombol saat hover */
+}
+
+/* Gaya untuk gambar profil */
+.roundedCircle {
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    box-shadow: none; /* Hapus bayangan */
+    border: none; /* Hapus border */
+}
+
+/* Gaya umum untuk container ikon dan teks */
+.iconText {
+    display: flex; /* Mengatur container untuk menggunakan flexbox */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+}
+
+/* Gaya untuk ikon volume */
+.iconVolume {
+    color: #f04747; /* Warna ikon volume default */
+    font-size: 1rem; /* Ukuran font ikon volume */
+    transition: color 0.3s ease; /* Transisi warna saat hover */
+    margin-right: 0.5rem; /* Jarak antara ikon dan teks */
+}
+
+/* Gaya untuk teks */
+.text {
+    font-size: 1rem; /* Ukuran font teks */
+    color: #000000; /* Warna teks */
+}
+
+  
+  .navDropdownMenu .dropdown-item {
+    font-size: 0.875rem; /* Ukuran font untuk item dropdown */
+  }

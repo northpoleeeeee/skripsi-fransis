@@ -1,0 +1,67 @@
+/* src/pages/admin/User.module.css */
+
+/* Area konten utama */
+.contentArea {
+  margin-left: 250px; /* Sesuaikan dengan lebar sidebar */
+  margin-top: 60px; /* Sesuaikan dengan tinggi navbar */
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: calc(100vh - 60px); /* Pastikan area konten tidak tertutup navbar */
+  overflow-x: auto; /* Tambahkan scrollbar horizontal jika diperlukan */
+}
+
+/* Tabel */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Sel tabel */
+.table th, .table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Header tabel */
+.table th {
+  background-color: #f4f4f4;
+}
+
+/* Gambar dalam tabel */
+.table img {
+  border-radius: 50%;
+  max-width: 50px; /* Ukuran lebih kecil untuk foto profil */
+  height: 50px; /* Sama dengan lebar untuk menjaga proporsi bulat */
+  object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+/* Area tindakan dalam tabel */
+.table .actions {
+  display: flex;
+  justify-content: center; /* Pusatkan konten horizontal */
+  align-items: center; /* Pusatkan konten vertikal */
+  gap: 10px; /* Jarak antar tombol */
+}
+
+/* Tombol dalam area tindakan */
+.table .actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Pusatkan ikon secara vertikal */
+}
+
+/* Warna tombol saat hover */
+.table .actions button:hover {
+  color: #0070f3; /* Warna hover untuk ikon */
+}
+
+/* Judul */
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+

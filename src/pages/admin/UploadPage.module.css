@@ -1,0 +1,27 @@
+/* Kontainer utama */
+.container {
+  display: flex;
+  height: 100vh; /* Pastikan kontainer utama mengisi tinggi viewport */
+  overflow: hidden; /* Menghindari scroll tambahan pada kontainer utama */
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background-color: #f8f9fa; /* Warna latar belakang sidebar */
+  padding: 20px; /* Ruang di dalam sidebar */
+  height: 100vh; /* Mengisi tinggi viewport */
+  position: fixed; /* Tetap di tempat saat scroll */
+  top: 0; /* Pastikan posisi tetap di atas */
+  left: 0; /* Pastikan posisi tetap di kiri */
+}
+
+/* Area konten */
+.content {
+  flex: 4;
+  margin-left: 250px; /* Jarak dari sidebar (sesuaikan dengan lebar sidebar) */
+  padding: 20px;
+  overflow: auto; /* Menghindari konten terpotong jika terlalu panjang */
+  height: 100vh; /* Pastikan konten mengisi tinggi viewport */
+}
+
