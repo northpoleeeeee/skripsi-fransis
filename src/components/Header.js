@@ -8,6 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FaSignOutAlt, FaSignInAlt, FaVolumeUp } from 'react-icons/fa';
 import Image from 'next/image';
 import styles from './Header.module.css'; // Import CSS Module
+import Link from 'next/link';
 
 // Fungsi untuk melakukan text-to-speech
 const handleTextToSpeech = (text) => {
@@ -191,9 +192,11 @@ export default function  Header() {
                 ) : (
                   <>
                     {isAdmin && (
-                      <NavDropdown.Item href="/admin" className={styles.navDropdownItem}>
-                        Dashboard
-                      </NavDropdown.Item>
+                       <Link href="/admin" passHref>
+                       <NavDropdown.Item className={styles.navDropdownItem}>
+                         Dashboard
+                       </NavDropdown.Item>
+                     </Link>
                     )}
                     <NavDropdown.Item onClick={() => signOut({ callbackUrl: '/' })} className={styles.navDropdownItem}>
                       <FaSignOutAlt className="me-2" /> Logout
